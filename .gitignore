@@ -5,3 +5,4 @@ __pycache__/
 *.part
 .DS_Store
 site/data/
+dist/

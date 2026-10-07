@@ -4,6 +4,22 @@ Links the Internet Archive's scanned pulp magazines (`pulpmagazinearchive`) to I
 
 Status: site built; automatic matching added (`FINDINGS-matching.md`). Phase 2 results are in `FINDINGS-phase2.md`; Phase 1 findings are in `FINDINGS-phase1.md`.
 
+## Quick start (prebuilt data)
+
+You don't need to run the pipeline just to serve the site. Each [release](https://github.com/internetarchivecanada/pulp-explorer/releases) has the built site data attached as `pulp-explorer-site-data-<date>.tar.gz` (about 10 MB), with a `.sha256` checksum beside it.
+
+```sh
+git clone git@github.com:internetarchivecanada/pulp-explorer.git && cd pulp-explorer
+# download the .tar.gz from the latest release into this folder, then:
+shasum -a 256 -c pulp-explorer-site-data-*.tar.gz.sha256   # optional: check the download
+tar -xzf pulp-explorer-site-data-*.tar.gz -C site            # creates site/data/
+python3 -m http.server 8765 --directory site                 # open http://127.0.0.1:8765/
+```
+
+Or serve it with Docker: `docker build -t pulp-explorer . && docker run -d --name pulp-explorer -p 8080:80 pulp-explorer`, then open http://localhost:8080.
+
+To refresh the data (for example with a newer ISFDB backup), run the pipeline below and export a new archive with `tar -czf dist/pulp-explorer-site-data-<date>.tar.gz -C site data`.
+
 ## Setup
 
 Python 3.12+ and the `sqlite3` command line tool. No third-party Python packages are needed.
