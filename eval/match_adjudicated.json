@@ -1,0 +1,10 @@
+{
+  "_about": "Cases where the matcher and an ISFDB scan link disagreed, settled by looking at the scan's cover and contents page (2026-10-06). 'truth' is the ISFDB pub_id the scan really is, or 'either' when ISFDB has two records for one issue.",
+  "Amazing_Stories_Quarterly_v02n04_1929-Fall_Missing_ibcbc": {"truth": "matcher", "evidence": "contents page: VOL. 2, OCTOBER 20, 1929, NO. 4; cover 'Fall Edition 1929'. ISFDB links it to Summer 1929."},
+  "Donald_A._Wollheim_ed._Avon_Fantasy_Reader_no._11_1949": {"truth": "matcher", "evidence": "cover 'Avon Fantasy Reader No. 11'; editor's note 'the Eleventh Avon Fantasy Reader'. ISFDB links it to No. 12."},
+  "amazing-stories-v-25n-03-1951-03": {"truth": "matcher", "evidence": "cover and spine 'Volume 25 Number 3, March 1951'. ISFDB links it to November 1951."},
+  "Planet_Stories_v02n05_1943-Wi_sas": {"truth": "either", "evidence": "cover 'WINTER, 1943'; ISFDB has this issue as both 'Winter 1943' and 'March 1943'."},
+  "Authentic_Science_Fiction_80_1957-05": {"truth": "isfdb", "evidence": "contents page 'MAY, 1957, No. 80'."},
+  "Fantasy_Book_v01n02_1947": {"truth": "isfdb", "evidence": "contents page 'VOL. 1 NUMBER 2'."},
+  "Scoops_v01n17_1934-06-02": {"truth": "isfdb", "evidence": "cover 'No. 17 Vol. 1. June 2, 1934'."}
+}

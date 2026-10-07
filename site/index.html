@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulp Magazine Explorer</title>
+<meta name="description" content="Find any story or author in the Internet Archive's scanned pulp magazines and jump to the page where it starts.">
+<link rel="preload" href="fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/alfaslabone.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="#/" aria-label="Pulp Magazine Explorer, home">
+      <span class="brand-big" aria-hidden="true">Pulp</span>
+      <span class="brand-rest" aria-hidden="true">Magazine Explorer</span>
+    </a>
+    <nav aria-label="Site">
+      <a href="#/magazines">Magazines</a>
+      <a href="#/about">About</a>
+    </nav>
+  </div>
+  <div class="wrap">
+    <div class="search" role="search">
+      <label for="q" class="visually-hidden">Search authors, pen names, stories and magazines</label>
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Author, pen name, story or magazine…"
+             role="combobox" aria-expanded="false" aria-controls="suggestions" aria-autocomplete="list">
+      <ul id="suggestions" role="listbox" aria-label="Suggestions" hidden></ul>
+      <p id="search-status" class="visually-hidden" aria-live="polite"></p>
+    </div>
+  </div>
+</header>
+<div class="strap"><p class="wrap">ISFDB's bibliography with exact page links to the Archive's scans</p></div>
+<main id="main" class="wrap" tabindex="-1">
+  <p class="loading">Loading…</p>
+</main>
+<footer class="wrap footer">
+  <p>Bibliographic data from the <a href="https://www.isfdb.org/">Internet Speculative Fiction Database</a>
+  (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>). Scans from the
+  Internet Archive's <a href="https://archive.org/details/pulpmagazinearchive">Pulp Magazine Archive</a>.
+  Page links come from imperfect OCR. <a href="#/about">How this works</a>.</p>
+</footer>
+<div id="tooltip" class="tooltip" role="status" hidden></div>
+<script src="app.js?v=8"></script>
+</body>
+</html>

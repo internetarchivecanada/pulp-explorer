@@ -1,0 +1,7 @@
+.venv/
+data/raw/
+data/build/
+__pycache__/
+*.part
+.DS_Store
+site/data/
