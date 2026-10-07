@@ -2,7 +2,7 @@
 
 Public tool for Wayback Machine Labs (https://wayback-labs.sf.archive.org/), built by an Internet Archive intern. It links the Archive's scanned pulp magazines (collection `pulpmagazinearchive`, about 28.4k items) to structured bibliographic data from ISFDB (isfdb.org). A reader can search an author, pen name or story and land on the exact page of the scan where that story starts.
 
-(The directory is called `seeds` because the project began as a seed-catalog explorer. It was dropped on 2026-10-05: extracting from OCR needed roughly 280k downloads, far too many for the time budget.)
+(The project began as a seed-catalog explorer. That idea was dropped on 2026-10-05: extracting from OCR needed roughly 280k downloads, far too many for the time budget.)
 
 ## Goal
 
