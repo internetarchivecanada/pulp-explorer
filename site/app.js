@@ -440,6 +440,7 @@ input.addEventListener("keydown", e => {
   else if (e.key === "Enter" && !list.hidden && results.length) { e.preventDefault(); go(results[Math.max(active, 0)]); }
   else if (e.key === "Escape") { closeSuggestions(); }
 });
-input.addEventListener("blur", () => setTimeout(closeSuggestions, 100));
+// Deferred so a click elsewhere settles first; skip if focus came back (e.g. a "Try" chip refocused the input).
+input.addEventListener("blur", () => setTimeout(() => { if (document.activeElement !== input) closeSuggestions(); }, 100));
 
 route();
