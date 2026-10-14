@@ -1,4 +1,4 @@
-# Pulp Magazine Explorer (Wayback Machine Labs)
+# Pulp Magazine Explorer
 
 Links the Internet Archive's scanned pulp magazines (`pulpmagazinearchive`) to ISFDB's bibliographic records. You search an author, pen name or story and jump to the page of the scan where it starts.
 
